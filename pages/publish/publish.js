@@ -1,4 +1,4 @@
-const GITHUB_CLIENT_ID = '284c2ed8c719c8520bd1';
+const GITHUB_CLIENT_ID = 'a7cf3307d37873d42d2b';
 
 // TODO: Replace darr with an icon.
 const previewImageTemplate = (fileURL) =>
@@ -55,7 +55,7 @@ const initPage = () => {
     const publishAnchor = document.getElementById("publish-project");
 
     const randomString = Math.random().toString(36).substring(7);
-    publishAnchor.setAttribute('href', `https://github.com/login/oauth/authorize?client_id=${GITHUB_CLIENT_ID}&scope=public_repo&state=${randomString}&redirect_uri=${window.origin}/studio/pages/publish-confirm/index.html`);
+    publishAnchor.setAttribute('href', `https://github.com/login/oauth/authorize?client_id=${GITHUB_CLIENT_ID}&scope=public_repo&state=${randomString}&redirect_uri=${window.origin}/pages/publish-confirm/index.html`);
     window.session.randomString = randomString;
 
     setSession(window.session);

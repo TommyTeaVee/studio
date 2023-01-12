@@ -96,7 +96,7 @@ const config = [
             User denied Geolocation: if this was a mistake you can allow location for this page only by clicking the little 🔒left of the url
             </p>
             </div>`,
-        center: [-33.907269, 18.4138363,17],
+        center: [-26.186199, 28.018997],
         onLoad_zoom: 18,
         attribution_opts: {
             attribution: openStreetMaps_attribution,
